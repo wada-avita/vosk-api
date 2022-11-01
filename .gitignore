@@ -38,6 +38,7 @@ python/test/model
 python/test/ref
 python/test/result.txt
 python/test/wav.scp
+python/.env/
 
 # Java
 *.class
@@ -69,3 +70,7 @@ c/test_vosk_speaker
 c/oprofile_data
 c/model
 c/test.wav
+
+# model
+python/model/
+vosk-model*

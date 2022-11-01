@@ -56,6 +56,7 @@ try:
         parser.exit(0)
     if args.samplerate is None:
         device_info = sd.query_devices(args.device, 'input')
+        print(f"{device_info=}")
         # soundfile expects an int, sounddevice provides a float:
         args.samplerate = int(device_info['default_samplerate'])
 
